@@ -237,7 +237,7 @@ async def _(event):
                 if "on" in isclaim:
                     await event.edit(f"الصيد وصل لـ({trys}) من المحاولات")
                 elif "off" in isclaim:
-                    await event.edit("لايوجد صيد شغال !")
+                    await event.edit("رجع شغل صيد !")
                 else:
                     await event.edit("خطأ")
             else:
@@ -259,10 +259,17 @@ async def _(event):
                     await sedthon(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
                     await event.client.send_message(event.chat_id, f'''
-- Done ↣ (@{username})
-- By ↣ @S_Y_V !
-- Hunting History ↣ {Hussenk}
-- Hunting Hour ↣ {Levii}
+●━━━━━━━━●
+┏━━━━━┓
+- By ↣ @iziii 
+┗━━━━━┛
+┏━━━━━┓
+↣ (@{username})
+┗━━━━━┛
+┏━━━━━┓
+- By ↣@H_P_K 
+┗━━━━━┛
+●━━━━━━━━●
     ''')
                     break
                 except Exception as c:
@@ -275,7 +282,7 @@ async def _(event):
                     if "A wait of" in str(eee):
                         break
                     else:
-                        await sedthon.send_message(event.chat.id, "سأستمر بلفحص !")
+                        await sedthon.send_message(event.chat.id, " اجاك متاح !")
             else:
                 pass
             trys += 1
@@ -283,7 +290,7 @@ async def _(event):
         isclaim.clear()
         isclaim.append("off")
         trys = ""
-        await event.client.send_message(event.chat_id, "تم الانتهاء من الفحص")
+        await event.client.send_message(event.chat_id, "! انتهى الصيد")
         
 @sedthon.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
 async def _(event):
@@ -319,10 +326,17 @@ async def _(event):
                         await sedthon(functions.channels.UpdateUsernameRequest(
                             channel=ch, username=username))
                         await event.client.send_message(event.chat_id, f'''
-- Done ↣ (@{username})
-- By ↣ @S_Y_V !
-- Hunting History ↣ {Hussenk}
-- Hunting Hour ↣ {Levii}
+●━━━━━━━━●
+┏━━━━━┓
+- By ↣ @iziii 
+┗━━━━━┛
+┏━━━━━┓
+↣ (@{username})
+┗━━━━━┛
+┏━━━━━┓
+- By ↣@H_P_K 
+┗━━━━━┛
+●━━━━━━━━●
     ''')
                         break
                     except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -353,10 +367,17 @@ async def _(event):
                 await sedthon(functions.channels.UpdateUsernameRequest(
                     channel=ch, username=username))
                 await event.client.send_message(event.chat_id, f'''
-- Done ↣ (@{username})
-- By ↣ @S_Y_V !
-- Hunting History ↣ {Hussenk}
-- Hunting Hour ↣ {Levii}
+●━━━━━━━━●
+┏━━━━━┓
+- By ↣ @iziii 
+┗━━━━━┛
+┏━━━━━┓
+↣ (@{username})
+┗━━━━━┛
+┏━━━━━┓
+- By ↣@H_P_K 
+┗━━━━━┛
+●━━━━━━━━●
     ''')
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
                 await event.client.send_message(event.chat_id, f"مبند `{username}` ❌❌")
