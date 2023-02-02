@@ -261,15 +261,11 @@ async def _(event):
                     await event.client.send_message(event.chat_id, f'''
 ●━━━━━━━━●
 ┏━━━━━┓
-- By ↣ @iziii 
+- By ↣ @S_Y_N 
 ┗━━━━━┛
 ┏━━━━━┓
-↣ (@{username})
+  Done↣ (@{username})
 ┗━━━━━┛
-┏━━━━━┓
-- By ↣@H_P_K 
-┗━━━━━┛
-●━━━━━━━━●
     ''')
                     break
                 except Exception as c:
@@ -328,15 +324,11 @@ async def _(event):
                         await event.client.send_message(event.chat_id, f'''
 ●━━━━━━━━●
 ┏━━━━━┓
-- By ↣ @iziii 
+- By ↣ @S_Y_N 
 ┗━━━━━┛
 ┏━━━━━┓
 ↣ (@{username})
-┗━━━━━┛
-┏━━━━━┓
-- By ↣@H_P_K 
-┗━━━━━┛
-●━━━━━━━━●
+┗━━━━
     ''')
                         break
                     except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -369,15 +361,11 @@ async def _(event):
                 await event.client.send_message(event.chat_id, f'''
 ●━━━━━━━━●
 ┏━━━━━┓
-- By ↣ @iziii 
+- By ↣ @S_Y_N
 ┗━━━━━┛
 ┏━━━━━┓
 ↣ (@{username})
 ┗━━━━━┛
-┏━━━━━┓
-- By ↣@H_P_K 
-┗━━━━━┛
-●━━━━━━━━●
     ''')
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
                 await event.client.send_message(event.chat_id, f"مبند `{username}` ❌❌")
